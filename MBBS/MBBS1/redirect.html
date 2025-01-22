@@ -10,8 +10,8 @@
     
 <body>
     <h1>Redirecting to HKU Portal and then Moodle...</h1>
-    <p>You will be redirected to <a href="https://hkuportal.hku.hk/cas/aad?email=qianli42@connect.hku.hk">HKU Portal</a> first, then to Moodle in <span id="countdown">5.000</span> seconds.</p>
-    <p>If you are not redirected automatically, please click <a href="https://moodle.hku.hk/course/view.php?id=113354" target="_blank">here</a> for Moodle.</p>
+    <p>You will be redirected to <a href="https://hkuportal.hku.hk/cas/aad?email=qianli42@connect.hku.hk" target="_blank">HKU Portal</a> first, then to Moodle in <span id="countdown">5.000</span> seconds.</p>
+    <p>If you are not redirected automatically, please click <a href="https://moodle.hku.hk/course/view.php?id=113354">here</a> for Moodle.</p>
 
     <script>
         // 先打开HKU Portal页面
@@ -31,7 +31,7 @@
             countdown -= 10; // 每次减少10毫秒
             if (countdown <= 0) {
                 clearInterval(countdownInterval); // 停止倒计时
-                window.open("https://hkuportal.hku.hk/cas/aad?email=qianli42@connect.hku.hk")// 跳转到Moodle
+                window.open("https://moodle.hku.hk/course/view.php?id=113354")// 跳转到Moodle
             }
         }, 10); // 每10毫秒更新一次
     </script>
