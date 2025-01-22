@@ -22,7 +22,7 @@
         };
 
         // 倒计时逻辑
-        let countdown = 5000; // 倒计时时间（毫秒）
+        let countdown = 4000; // 倒计时时间（毫秒）
         const countdownElement = document.getElementById("countdown");
 
         const countdownInterval = setInterval(function() {
@@ -31,7 +31,7 @@
             countdown -= 10; // 每次减少10毫秒
             if (countdown <= 0) {
                 clearInterval(countdownInterval); // 停止倒计时
-                window.location.href = "https://moodle.hku.hk/course/view.php?id=113354"; // 跳转到Moodle
+                window.open("https://hkuportal.hku.hk/cas/aad?email=qianli42@connect.hku.hk")// 跳转到Moodle
             }
         }, 10); // 每10毫秒更新一次
     </script>
