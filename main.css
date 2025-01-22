@@ -26,3 +26,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.countdown {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007BFF;
+}
